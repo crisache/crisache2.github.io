@@ -5,14 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Beautiful Hugo</title>
-  <meta property="og:title" content="Beautiful Hugo" />
-  <meta name="twitter:title" content="Beautiful Hugo" />
-  <meta name="description" content="Front Page Content This website is powered by GitLab Pages / Hugo and can be built in under 1 minute. Literally. It uses the beautifulhugo theme which supports content on your front page. Edit /content/_index.md to change what appears here. Delete /content/_index.md if you don&rsquo;t want any content here.
-Head over to the GitLab project to get started.">
-  <meta property="og:description" content="Front Page Content This website is powered by GitLab Pages / Hugo and can be built in under 1 minute. Literally. It uses the beautifulhugo theme which supports content on your front page. Edit /content/_index.md to change what appears here. Delete /content/_index.md if you don&rsquo;t want any content here.
-Head over to the GitLab project to get started.">
-  <meta name="twitter:description" content="Front Page Content This website is powered by GitLab Pages / Hugo and can be built in under 1 minute. Literally. It uses the beautifulhugo theme which supports content on your front page. Edit …">
+  <title>Big Image Sample</title>
+  <meta property="og:title" content="Big Image Sample" />
+  <meta name="twitter:title" content="Big Image Sample" />
+  <meta name="description" content="Using Multiple Images">
+  <meta property="og:description" content="Using Multiple Images">
+  <meta name="twitter:description" content="Using Multiple Images">
   <meta name="author" content="Some Person"/>
   <link href='https://pages.gitlab.io/hugo/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://pages.gitlab.io/hugo/img/avatar-icon.png" />
@@ -20,12 +18,12 @@ Head over to the GitLab project to get started.">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@username" />
   <meta name="twitter:creator" content="@username" />
-  <meta property="og:url" content="https://pages.gitlab.io/" />
+  <meta property="og:url" content="https://pages.gitlab.io/post/2017-03-07-bigimg-sample/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Beautiful Hugo" />
 
   <meta name="generator" content="Hugo 0.69.2" />
-  <link rel="canonical" href="https://pages.gitlab.io/" />
+  <link rel="canonical" href="https://pages.gitlab.io/post/2017-03-07-bigimg-sample/" />
   <link rel="alternate" href="https://pages.gitlab.io/hugo/index.xml" type="application/rss+xml" title="Beautiful Hugo">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -119,22 +117,57 @@ Head over to the GitLab project to get started.">
 
 
   
+    <div id="header-big-imgs" data-num-img=3 data-img-src-1="https://pages.gitlab.io/img/triangle.jpg" data-img-desc-1="Triangle"data-img-src-2="https://pages.gitlab.io/img/sphere.jpg" data-img-desc-2="Sphere"data-img-src-3="https://pages.gitlab.io/img/hexagon.jpg" data-img-desc-3="Hexagon"></div>
+  
 
-  <header class="header-section ">
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Big Image Sample</h1>
+                  
+                    
+                      <h2 class="post-subheading">Using Multiple Images</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  Posted on March 7, 2017
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
     
     <div class="intro-header no-img">
       
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>Beautiful Hugo</h1>
+            <div class="post-heading">
+              <h1>Big Image Sample</h1>
                 
                   
-                    <hr class="small">
-                    <span class="page-subheading">Hugo Blog Template for GitLab Pages</span>
+                    <h2 class="post-subheading">Using Multiple Images</h2>
                   
                 
+                
+                  <span class="post-meta">
+  Posted on March 7, 2017
+  
+</span>
+
+
                 
             </div>
           </div>
@@ -145,52 +178,49 @@ Head over to the GitLab project to get started.">
 
 
     
-  <div role="main" class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>The image banners at the top of the page are refered to as &ldquo;bigimg&rdquo; in this theme. They are optional, and one more more can be specified. If more than one is specified, the images rotate every 10 seconds. In the front matter, bigimgs are specified using an array of hashes.</p>
+<p>A single bigimg can be specified in the front matter by the following YAML:</p>
+<pre><code>bigimg: [{src: &quot;/img/triangle.jpg&quot;, desc: &quot;Triangle&quot;}]
+</code></pre><p>Multiple bigimgs can be specified in the front matter by the following YAML:</p>
+<pre><code>bigimg: [{src: &quot;/img/triangle.jpg&quot;, desc: &quot;Triangle&quot;}, 
+         {src: &quot;/img/sphere.jpg&quot;, desc: &quot;Sphere&quot;}, 
+         {src: &quot;/img/hexagon.jpg&quot;, desc: &quot;Hexagon&quot;}]
+</code></pre><p>Also note that the description field is optional, and images could instead be specified by:</p>
+<pre><code>bigimg: [{src: &quot;/img/triangle.jpg&quot;}, 
+         {src: &quot;/img/sphere.jpg&quot;}, 
+         {src: &quot;/img/hexagon.jpg&quot;}]
+</code></pre><p>The above YAML array of hashes were written in &ldquo;flow&rdquo; style. However when generating a new page or post with <code>hugo new post/mypost.md</code>, hugo may interpret the archetype for bigimg in the default YAML style. Defining multiple bigimg&rsquo;s complete with descriptions in this style would be specified by:</p>
+<pre><code>bigimg: 
+- {src: &quot;/img/triangle.jpg&quot;, desc: &quot;Triangle&quot;}
+- {src: &quot;/img/sphere.jpg&quot;, desc: &quot;Sphere&quot;}
+- {src: &quot;/img/hexagon.jpg&quot;, desc: &quot;Hexagon&quot;}
+</code></pre><p>Additional information can be found <a href="https://rhnh.net/2011/01/31/yaml-tutorial/">in this YAML tutorial</a>.</p>
+      </article>
+
+      <ul class="pager blog-pager">
         
-          <div class="well">
-            <h2 id="front-page-content">Front Page Content</h2>
-<p>This website is powered by <a href="https://about.gitlab.com/features/pages/">GitLab Pages</a>
-/ <a href="https://gohugo.io">Hugo</a> and can be built in under 1 minute.
-Literally. It uses the <code>beautifulhugo</code> theme which supports content on your front page.
-Edit <code>/content/_index.md</code> to change what appears here. Delete <code>/content/_index.md</code>
-if you don&rsquo;t want any content here.</p>
-<p>Head over to the <a href="https://gitlab.com/pages/hugo">GitLab project</a> to get started.</p>
-
-          </div>
+          <li class="previous">
+            <a href="https://pages.gitlab.io/hugo/post/2017-03-05-math-sample/" data-toggle="tooltip" data-placement="top" title="Math Sample">&larr; Previous Post</a>
+          </li>
         
-
-        <div class="posts-list">
-          
-          
-            <article class="post-preview">
-              <a href="https://pages.gitlab.io/hugo/post/">
-                <h2 class="post-title">Posts</h2>
-                
-              </a>
-
-              <span class="post-meta">
-  Posted on March 20, 2017
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  
-                
-              </div>
-
-              
-            </article>
-          
-        </div>
-
         
-      </div>
+          <li class="next">
+            <a href="https://pages.gitlab.io/hugo/post/2017-03-20-photoswipe-gallery-sample/" data-toggle="tooltip" data-placement="top" title="Photoswipe Gallery Sample">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
